@@ -1,0 +1,42 @@
+{
+    "name": "zamapps/zam-interface",
+    "description": "ZamApps interface package that will be used to interact with the various services within each app.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+    "authors": [
+        {
+            "name": "Luccas Beck",
+            "email": "luccas.beck@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:zamapps/laravel-job-logger.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework":  "5.2.*",
+        "aws/aws-sdk-php-laravel": "^3.3",
+        "maatwebsite/excel": "2.1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZamApps\\ZamInterface\\": "src"
+        }
+    },
+    "require-dev": {},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"ZamApps\\ZamInterface\\ZamInterfaceServiceProvider"
+			]
+		}
+	}
+}
